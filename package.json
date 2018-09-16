@@ -1,0 +1,25 @@
+{
+    "name": "chemical.css",
+    "version": "1.0.0",
+    "description": "A library for rendering molecules written in pure CSS",
+    "keywords": [
+        "chemistry",
+        "molecule rendering"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/richlewis42/chemical.css.git"
+    },
+    "author": {
+        "name": "Rich Lewis",
+        "email": "richlewis42@users.noreply.github.com",
+        "url": "https://richlew.is"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/richlewis42/chemical.css",
+    "bugs": {
+        "url": "https:@//github.com/richlewis42/richlew.is/issues",
+        "email": "richlewis42@users.noreply.github.com"
+    },
+    "main": "chemical.css"
+}
