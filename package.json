@@ -1,25 +1,39 @@
 {
-    "name": "chemical.css",
-    "version": "1.0.0",
-    "description": "A library for rendering molecules written in pure CSS",
-    "keywords": [
-        "chemistry",
-        "molecule rendering"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/richlewis42/chemical.css.git"
-    },
-    "author": {
-        "name": "Rich Lewis",
-        "email": "richlewis42@users.noreply.github.com",
-        "url": "https://richlew.is"
-    },
-    "license": "MIT",
-    "homepage": "https://github.com/richlewis42/chemical.css",
-    "bugs": {
-        "url": "https:@//github.com/richlewis42/richlew.is/issues",
-        "email": "richlewis42@users.noreply.github.com"
-    },
-    "main": "chemical.css"
+  "name": "chemical.css",
+  "version": "1.0.0",
+  "description": "A library for rendering molecules written in pure CSS",
+  "keywords": [
+    "chemistry",
+    "molecule rendering"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richlewis42/chemical.css.git"
+  },
+  "author": {
+    "name": "Rich Lewis",
+    "email": "richlewis42@users.noreply.github.com",
+    "url": "https://richlew.is"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/richlewis42/chemical.css",
+  "bugs": {
+    "url": "https:@//github.com/richlewis42/richlew.is/issues",
+    "email": "richlewis42@users.noreply.github.com"
+  },
+  "main": "chemical.css",
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-recommended"
+    ]
+  },
+  "devDependencies": {
+    "stylelint": "^9.5.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "scripts": {
+    "lint": "stylelint *.css"
+  }
 }
