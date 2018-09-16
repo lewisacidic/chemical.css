@@ -23,23 +23,47 @@
     );
 }
 
-.hydrogen::after {
+.atom::after {
+  font-size: 0.6em;
+  line-height: 0.5em;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+.atom.p1::after {
+  content: "+";
+}
+
+.atom.p2::after {
+  content: "2+";
+}
+
+.atom.m1::after {
+  content: '−';
+}
+
+.atom.m2::after {
+  content: '2-';
+}
+
+.hydrogen::before {
   content: "H";
 }
 
-.helium::after {
+.helium::before {
   content: "He";
 }
 
-.lithium::after {
+.lithium::before {
   content: "Li";
 }
 
-.beryllium::after {
+.beryllium::before {
   content: "Be";
 }
 
-.boron::after {
+.boron::before {
   content: "B";
 }
 
@@ -47,455 +71,459 @@
   background: none;
 }
 
-.carbon.explicit::after {
+.carbon.explicit {
+  background: white;
+}
+
+.carbon.explicit::before {
   content: "C";
 }
 
-.nitrogen::after {
+.nitrogen::before {
   content: "N";
 }
 
-.oxygen::after {
+.oxygen::before {
   content: "O";
 }
 
-.fluorine::after {
+.fluorine::before {
   content: "F";
 }
 
-.neon::after {
+.neon::before {
   content: "Ne";
 }
 
-.sodium::after {
+.sodium::before {
   content: "Na";
 }
 
-.magnesium::after {
+.magnesium::before {
   content: "Mg";
 }
 
-.aluminium::after {
+.aluminium::before {
   content: "Al";
 }
 
-.silicon::after {
+.silicon::before {
   content: "Si";
 }
 
-.phosphorus::after {
+.phosphorus::before {
   content: "P";
 }
 
-.sulphur::after {
+.sulphur::before {
   content: "S";
 }
 
-.chlorine::after {
+.chlorine::before {
   content: "Cl";
 }
 
-.argon::after {
+.argon::before {
   content: "Ar";
 }
 
-.potassium::after {
+.potassium::before {
   content: "K";
 }
 
-.calcium::after {
+.calcium::before {
   content: "Ca";
 }
 
-.scandium::after {
+.scandium::before {
   content: "Sc";
 }
 
-.titanium::after {
+.titanium::before {
   content: "Ti";
 }
 
-.vanadium::after {
+.vanadium::before {
   content: "V";
 }
 
-.chromium::after {
+.chromium::before {
   content: "Cr";
 }
 
-.manganese::after {
+.manganese::before {
   content: "Mn";
 }
 
-.iron::after {
+.iron::before {
   content: "Fe";
 }
 
-.cobalt::after {
+.cobalt::before {
   content: "Co";
 }
 
-.nickel::after {
+.nickel::before {
   content: "Ni";
 }
 
-.copper::after {
+.copper::before {
   content: "Cu";
 }
 
-.zinc::after {
+.zinc::before {
   content: "Zn";
 }
 
-.gallium::after {
+.gallium::before {
   content: "Ga";
 }
 
-.germanium::after {
+.germanium::before {
   content: "Ge";
 }
 
-.arsenic::after {
+.arsenic::before {
   content: "As";
 }
 
-.selenium::after {
+.selenium::before {
   content: "Se";
 }
 
-.bromine::after {
+.bromine::before {
   content: "Br";
 }
 
-.krypton::after {
+.krypton::before {
   content: "Kr";
 }
 
-.rubidium::after {
+.rubidium::before {
   content: "Rb";
 }
 
-.strontium::after {
+.strontium::before {
   content: "Sr";
 }
 
-.yttrium::after {
+.yttrium::before {
   content: "Y";
 }
 
-.zirconium::after {
+.zirconium::before {
   content: "Zr";
 }
 
-.niobium::after {
+.niobium::before {
   content: "Nb";
 }
 
-.molybdenum::after {
+.molybdenum::before {
   content: "Mo";
 }
 
-.technetium::after {
+.technetium::before {
   content: "Tc";
 }
 
-.ruthenium::after {
+.ruthenium::before {
   content: "Ru";
 }
 
-.rhodium::after {
+.rhodium::before {
   content: "Rh";
 }
 
-.palladium::after {
+.palladium::before {
   content: "Pd";
 }
 
-.silver::after {
+.silver::before {
   content: "Ag";
 }
 
-.cadmium::after {
+.cadmium::before {
   content: "Cd";
 }
 
-.indium::after {
+.indium::before {
   content: "In";
 }
 
-.tin::after {
+.tin::before {
   content: "Sn";
 }
 
-.antimony::after {
+.antimony::before {
   content: "Sb";
 }
 
-.tellurium::after {
+.tellurium::before {
   content: "Te";
 }
 
-.iodine::after {
+.iodine::before {
   content: "I";
 }
 
-.xenon::after {
+.xenon::before {
   content: "Xe";
 }
 
-.caesium::after {
+.caesium::before {
   content: "Cs";
 }
 
-.barium::after {
+.barium::before {
   content: "Ba";
 }
 
-.lanthanum::after {
+.lanthanum::before {
   content: "La";
 }
 
-.cerium::after {
+.cerium::before {
   content: "Ce";
 }
 
-.praseodymium::after {
+.praseodymium::before {
   content: "Pr";
 }
 
-.neodymium::after {
+.neodymium::before {
   content: "Nd";
 }
 
-.promethium::after {
+.promethium::before {
   content: "Pm";
 }
 
-.samarium::after {
+.samarium::before {
   content: "Sm";
 }
 
-.europium::after {
+.europium::before {
   content: "Eu";
 }
 
-.gadolinium::after {
+.gadolinium::before {
   content: "Gd";
 }
 
-.terbium::after {
+.terbium::before {
   content: "Tb";
 }
 
-.dysprosium::after {
+.dysprosium::before {
   content: "Dy";
 }
 
-.holmium::after {
+.holmium::before {
   content: "Ho";
 }
 
-.erbium::after {
+.erbium::before {
   content: "Er";
 }
 
-.thulium::after {
+.thulium::before {
   content: "Tm";
 }
 
-.ytterbium::after {
+.ytterbium::before {
   content: "Yb";
 }
 
-.lutetium::after {
+.lutetium::before {
   content: "Lu";
 }
 
-.hafnium::after {
+.hafnium::before {
   content: "Hf";
 }
 
-.tantalum::after {
+.tantalum::before {
   content: "Ta";
 }
 
-.tungsten::after {
+.tungsten::before {
   content: "W";
 }
 
-.rhenium::after {
+.rhenium::before {
   content: "Re";
 }
 
-.osmium::after {
+.osmium::before {
   content: "Os";
 }
 
-.iridium::after {
+.iridium::before {
   content: "Ir";
 }
 
-.platinum::after {
+.platinum::before {
   content: "Pt";
 }
 
-.gold::after {
+.gold::before {
   content: "Au";
 }
 
-.mercury::after {
+.mercury::before {
   content: "Hg";
 }
 
-.thallium::after {
+.thallium::before {
   content: "Tl";
 }
 
-.lead::after {
+.lead::before {
   content: "Pb";
 }
 
-.bismuth::after {
+.bismuth::before {
   content: "Bi";
 }
 
-.polonium::after {
+.polonium::before {
   content: "Po";
 }
 
-.astatine::after {
+.astatine::before {
   content: "At";
 }
 
-.radon::after {
+.radon::before {
   content: "Rn";
 }
 
-.francium::after {
+.francium::before {
   content: "Fr";
 }
 
-.radium::after {
+.radium::before {
   content: "Ra";
 }
 
-.actinium::after {
+.actinium::before {
   content: "Ac";
 }
 
-.thorium::after {
+.thorium::before {
   content: "Th";
 }
 
-.protactinium::after {
+.protactinium::before {
   content: "Pa";
 }
 
-.uranium::after {
+.uranium::before {
   content: "U";
 }
 
-.neptunium::after {
+.neptunium::before {
   content: "Np";
 }
 
-.plutonium::after {
+.plutonium::before {
   content: "Pu";
 }
 
-.americium::after {
+.americium::before {
   content: "Am";
 }
 
-.curium::after {
+.curium::before {
   content: "Cm";
 }
 
-.berkelium::after {
+.berkelium::before {
   content: "Bk";
 }
 
-.californium::after {
+.californium::before {
   content: "Cf";
 }
 
-.einsteinium::after {
+.einsteinium::before {
   content: "Es";
 }
 
-.fermium::after {
+.fermium::before {
   content: "Fm";
 }
 
-.mendelevium::after {
+.mendelevium::before {
   content: "Md";
 }
 
-.nobelium::after {
+.nobelium::before {
   content: "No";
 }
 
-.lawrencium::after {
+.lawrencium::before {
   content: "Lr";
 }
 
-.rutherfordium::after {
+.rutherfordium::before {
   content: "Rf";
 }
 
-.dubnium::after {
+.dubnium::before {
   content: "Db";
 }
 
-.seaborgium::after {
+.seaborgium::before {
   content: "Sg";
 }
 
-.bohrium::after {
+.bohrium::before {
   content: "Bh";
 }
 
-.hassium::after {
+.hassium::before {
   content: "Hs";
 }
 
-.meitnerium::after {
+.meitnerium::before {
   content: "Mt";
 }
 
-.darmstadtium::after {
+.darmstadtium::before {
   content: "Ds";
 }
 
-.roentgenium::after {
+.roentgenium::before {
   content: "Rg";
 }
 
-.copernicium::after {
+.copernicium::before {
   content: "Cn";
 }
 
-.nihonium::after {
+.nihonium::before {
   content: "Nh";
 }
 
-.flerovium::after {
+.flerovium::before {
   content: "Fl";
 }
 
-.moscovium::after {
+.moscovium::before {
   content: "Mc";
 }
 
-.livermorium::after {
+.livermorium::before {
   content: "Lv";
 }
 
-.tennessine::after {
+.tennessine::before {
   content: "Ts";
 }
 
-.oganesson::after {
+.oganesson::before {
   content: "Og";
 }
 
