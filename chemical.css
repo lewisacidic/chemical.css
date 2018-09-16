@@ -1,0 +1,569 @@
+:root {
+  --pixels-per-angstrom: 100;
+  --bond-width: 2px;
+  --double-bond-spacing: 6px;
+}
+
+.atom {
+  --size: 1.25em;
+
+  width: var(--size);
+  height: var(--size);
+  margin: calc(-0.5 * var(--size));
+  background: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transform:
+    translate(
+      calc(1px * var(--pixels-per-angstrom) * var(--x)),
+      calc(1px * var(--pixels-per-angstrom) * var(--y))
+    );
+}
+
+.hydrogen::after {
+  content: "H";
+}
+
+.helium::after {
+  content: "He";
+}
+
+.lithium::after {
+  content: "Li";
+}
+
+.beryllium::after {
+  content: "Be";
+}
+
+.boron::after {
+  content: "B";
+}
+
+.carbon {
+  background: none;
+}
+
+.carbon.explicit::after {
+  content: "C";
+}
+
+.nitrogen::after {
+  content: "N";
+}
+
+.oxygen::after {
+  content: "O";
+}
+
+.fluorine::after {
+  content: "F";
+}
+
+.neon::after {
+  content: "Ne";
+}
+
+.sodium::after {
+  content: "Na";
+}
+
+.magnesium::after {
+  content: "Mg";
+}
+
+.aluminium::after {
+  content: "Al";
+}
+
+.silicon::after {
+  content: "Si";
+}
+
+.phosphorus::after {
+  content: "P";
+}
+
+.sulphur::after {
+  content: "S";
+}
+
+.chlorine::after {
+  content: "Cl";
+}
+
+.argon::after {
+  content: "Ar";
+}
+
+.potassium::after {
+  content: "K";
+}
+
+.calcium::after {
+  content: "Ca";
+}
+
+.scandium::after {
+  content: "Sc";
+}
+
+.titanium::after {
+  content: "Ti";
+}
+
+.vanadium::after {
+  content: "V";
+}
+
+.chromium::after {
+  content: "Cr";
+}
+
+.manganese::after {
+  content: "Mn";
+}
+
+.iron::after {
+  content: "Fe";
+}
+
+.cobalt::after {
+  content: "Co";
+}
+
+.nickel::after {
+  content: "Ni";
+}
+
+.copper::after {
+  content: "Cu";
+}
+
+.zinc::after {
+  content: "Zn";
+}
+
+.gallium::after {
+  content: "Ga";
+}
+
+.germanium::after {
+  content: "Ge";
+}
+
+.arsenic::after {
+  content: "As";
+}
+
+.selenium::after {
+  content: "Se";
+}
+
+.bromine::after {
+  content: "Br";
+}
+
+.krypton::after {
+  content: "Kr";
+}
+
+.rubidium::after {
+  content: "Rb";
+}
+
+.strontium::after {
+  content: "Sr";
+}
+
+.yttrium::after {
+  content: "Y";
+}
+
+.zirconium::after {
+  content: "Zr";
+}
+
+.niobium::after {
+  content: "Nb";
+}
+
+.molybdenum::after {
+  content: "Mo";
+}
+
+.technetium::after {
+  content: "Tc";
+}
+
+.ruthenium::after {
+  content: "Ru";
+}
+
+.rhodium::after {
+  content: "Rh";
+}
+
+.palladium::after {
+  content: "Pd";
+}
+
+.silver::after {
+  content: "Ag";
+}
+
+.cadmium::after {
+  content: "Cd";
+}
+
+.indium::after {
+  content: "In";
+}
+
+.tin::after {
+  content: "Sn";
+}
+
+.antimony::after {
+  content: "Sb";
+}
+
+.tellurium::after {
+  content: "Te";
+}
+
+.iodine::after {
+  content: "I";
+}
+
+.xenon::after {
+  content: "Xe";
+}
+
+.caesium::after {
+  content: "Cs";
+}
+
+.barium::after {
+  content: "Ba";
+}
+
+.lanthanum::after {
+  content: "La";
+}
+
+.cerium::after {
+  content: "Ce";
+}
+
+.praseodymium::after {
+  content: "Pr";
+}
+
+.neodymium::after {
+  content: "Nd";
+}
+
+.promethium::after {
+  content: "Pm";
+}
+
+.samarium::after {
+  content: "Sm";
+}
+
+.europium::after {
+  content: "Eu";
+}
+
+.gadolinium::after {
+  content: "Gd";
+}
+
+.terbium::after {
+  content: "Tb";
+}
+
+.dysprosium::after {
+  content: "Dy";
+}
+
+.holmium::after {
+  content: "Ho";
+}
+
+.erbium::after {
+  content: "Er";
+}
+
+.thulium::after {
+  content: "Tm";
+}
+
+.ytterbium::after {
+  content: "Yb";
+}
+
+.lutetium::after {
+  content: "Lu";
+}
+
+.hafnium::after {
+  content: "Hf";
+}
+
+.tantalum::after {
+  content: "Ta";
+}
+
+.tungsten::after {
+  content: "W";
+}
+
+.rhenium::after {
+  content: "Re";
+}
+
+.osmium::after {
+  content: "Os";
+}
+
+.iridium::after {
+  content: "Ir";
+}
+
+.platinum::after {
+  content: "Pt";
+}
+
+.gold::after {
+  content: "Au";
+}
+
+.mercury::after {
+  content: "Hg";
+}
+
+.thallium::after {
+  content: "Tl";
+}
+
+.lead::after {
+  content: "Pb";
+}
+
+.bismuth::after {
+  content: "Bi";
+}
+
+.polonium::after {
+  content: "Po";
+}
+
+.astatine::after {
+  content: "At";
+}
+
+.radon::after {
+  content: "Rn";
+}
+
+.francium::after {
+  content: "Fr";
+}
+
+.radium::after {
+  content: "Ra";
+}
+
+.actinium::after {
+  content: "Ac";
+}
+
+.thorium::after {
+  content: "Th";
+}
+
+.protactinium::after {
+  content: "Pa";
+}
+
+.uranium::after {
+  content: "U";
+}
+
+.neptunium::after {
+  content: "Np";
+}
+
+.plutonium::after {
+  content: "Pu";
+}
+
+.americium::after {
+  content: "Am";
+}
+
+.curium::after {
+  content: "Cm";
+}
+
+.berkelium::after {
+  content: "Bk";
+}
+
+.californium::after {
+  content: "Cf";
+}
+
+.einsteinium::after {
+  content: "Es";
+}
+
+.fermium::after {
+  content: "Fm";
+}
+
+.mendelevium::after {
+  content: "Md";
+}
+
+.nobelium::after {
+  content: "No";
+}
+
+.lawrencium::after {
+  content: "Lr";
+}
+
+.rutherfordium::after {
+  content: "Rf";
+}
+
+.dubnium::after {
+  content: "Db";
+}
+
+.seaborgium::after {
+  content: "Sg";
+}
+
+.bohrium::after {
+  content: "Bh";
+}
+
+.hassium::after {
+  content: "Hs";
+}
+
+.meitnerium::after {
+  content: "Mt";
+}
+
+.darmstadtium::after {
+  content: "Ds";
+}
+
+.roentgenium::after {
+  content: "Rg";
+}
+
+.copernicium::after {
+  content: "Cn";
+}
+
+.nihonium::after {
+  content: "Nh";
+}
+
+.flerovium::after {
+  content: "Fl";
+}
+
+.moscovium::after {
+  content: "Mc";
+}
+
+.livermorium::after {
+  content: "Lv";
+}
+
+.tennessine::after {
+  content: "Ts";
+}
+
+.oganesson::after {
+  content: "Og";
+}
+
+.bond {
+  --dx: calc(var(--x2) - var(--x1));
+  --dy: calc(var(--y2) - var(--y1));
+  --r2: calc(var(--dx) * var(--dx) + var(--dy) * var(--dy));
+
+  /* css has no square root, so use the babylonian method to estimate */
+  --r-est01: calc(0.5 * (var(--r2) + 1));
+  --r-est02: calc(0.5 * (var(--r-est01) + (var(--r2) / var(--r-est01))));
+  --r-est03: calc(0.5 * (var(--r-est02) + (var(--r2) / var(--r-est02))));
+  --r-est04: calc(0.5 * (var(--r-est03) + (var(--r2) / var(--r-est03))));
+  --r-est05: calc(0.5 * (var(--r-est04) + (var(--r2) / var(--r-est04))));
+  --r-est06: calc(0.5 * (var(--r-est05) + (var(--r2) / var(--r-est05))));
+  --r-est07: calc(0.5 * (var(--r-est06) + (var(--r2) / var(--r-est06))));
+  --r-est08: calc(0.5 * (var(--r-est07) + (var(--r2) / var(--r-est07))));
+  --r-est09: calc(0.5 * (var(--r-est08) + (var(--r2) / var(--r-est08))));
+  --r: calc((var(--r-est09) + (var(--r2) / var(--r-est09))) / 2);
+  --sin: calc(var(--dy) / var(--r));
+  --cos: calc(var(--dx) / var(--r));
+
+  position: absolute;
+  width: calc(1px * var(--pixels-per-angstrom) * var(--r));
+  height: calc(var(--bond-width));
+  margin:
+    calc(var(--bond-width) * -0.5)
+    calc(-0.5px * var(--pixels-per-angstrom) * var(--r));
+  transform:
+    matrix(
+      var(--cos),
+      var(--sin),
+      calc(0 - var(--sin)),
+      var(--cos),
+      calc(0.5 * var(--pixels-per-angstrom) * (var(--x2) + var(--x1))),
+      calc(0.5 * var(--pixels-per-angstrom) * (var(--y1) + var(--y2)))
+    );
+  z-index: -1;
+  background: black;
+}
+
+.double.bond {
+  background: none;
+}
+
+.double.bond::before,
+.double.bond::after,
+.triple.bond::before,
+.triple.bond::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+.double.bond::before {
+  bottom: calc(0.5 * var(--double-bond-spacing));
+}
+
+.double.bond::after {
+  top: calc(0.5 * var(--double-bond-spacing));
+}
+
+.triple.bond::before {
+  bottom: calc(1 * var(--double-bond-spacing));
+}
+
+.triple.bond::after {
+  top: calc(1 * var(--double-bond-spacing));
+}
