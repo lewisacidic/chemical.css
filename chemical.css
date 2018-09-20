@@ -1,7 +1,15 @@
-:root {
-  --pixels-per-angstrom: 100;
+.structure {
+  --x-min: 0;
+  --y-min: 0;
+  --pixels-per-angstrom: 66;
   --bond-width: 2px;
   --double-bond-spacing: 6px;
+  --padding: 1em;
+  --x-max: 1;
+  --y-max: 1;
+
+  width: calc(2 * var(--padding) + 1px * var(--pixels-per-angstrom) * (var(--x-max) - var(--x-min)));
+  height: calc(2 * var(--padding) + 1px * var(--pixels-per-angstrom) * (var(--y-max) - var(--y-min)));
 }
 
 .atom {
@@ -18,8 +26,8 @@
   border-radius: 100%;
   transform:
     translate(
-      calc(1px * var(--pixels-per-angstrom) * var(--x)),
-      calc(1px * var(--pixels-per-angstrom) * var(--y))
+      calc(var(--padding) + 1px * var(--pixels-per-angstrom) * (var(--x) - var(--x-min))),
+      calc(var(--padding) + 1px * var(--pixels-per-angstrom) * (var(--y) - var(--y-min)))
     );
 }
 
@@ -553,13 +561,14 @@
     calc(var(--bond-width) * -0.5)
     calc(-0.5px * var(--pixels-per-angstrom) * var(--r));
   transform:
+    translate(var(--padding), var(--padding))
     matrix(
       var(--cos),
       var(--sin),
       calc(0 - var(--sin)),
       var(--cos),
-      calc(0.5 * var(--pixels-per-angstrom) * (var(--x2) + var(--x1))),
-      calc(0.5 * var(--pixels-per-angstrom) * (var(--y1) + var(--y2)))
+      calc(var(--pixels-per-angstrom) * (0.5 * (var(--x2) + var(--x1)) - var(--x-min))),
+      calc(var(--pixels-per-angstrom) * (0.5 * (var(--y1) + var(--y2)) - var(--y-min)))
     );
   z-index: -1;
   background: black;
@@ -594,4 +603,14 @@
 
 .triple.bond::after {
   top: calc(1 * var(--double-bond-spacing));
+}
+
+.backward {
+  height: calc(3 * var(--bond-width));
+  background: linear-gradient(90deg, black 25%, rgba(0, 0, 0, 0) 25%);
+  background-size: 8px auto;
+}
+
+.forward {
+  height: calc(3 * var(--bond-width));
 }
